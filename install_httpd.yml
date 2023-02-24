@@ -1,0 +1,6 @@
+  - hosts: all
+    tasks:
+    - name: Install the latest version of Apache
+      apt:
+        name: apache2
+        state: latest
