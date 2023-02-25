@@ -1,5 +1,9 @@
 - hosts: all
   tasks:
+  - name: Run the equivalent of "apt-get update" as a separate step
+    apt:
+      update_cache: yes
+
   - name: Install the latest version of Apache
     apt:
       name: apache2
